@@ -1,0 +1,15 @@
+#sessao1 {
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#imagem {
+    flex: 50%;
+}
+
+#sobreMim {
+    flex: 50%;
+}
