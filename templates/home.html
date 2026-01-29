@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/inicio.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/geral.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/sessao1.css')}}">
+</head>
+<body>
+    <header>
+        <h1>Bem vindo</h1>
+        <p>Ao meu portifólio</p>
+        <button onclick="irParaSessao()">Começar</button>
+    </header>
+    <section id="sessao1">
+        <div id="sobreMim">
+            <h2>Sobre mim</h2>
+            <p>Olá me chamo vitor, tenho 15 anos e sou um desenvolvedor fullstack. Posso criar os seus sites com frontend e backend. Quero aprender cada vez mais e adquirir esperiência, conto com você para isso.</p>
+        </div>
+        <div id="imagem">
+            <img src="{{url_for('static', filename='images/profile.jpeg')}}">
+        </div>
+    </section>
+    <script src="{{url_for('static', filename='scripts/scroll.js')}}"></script>
+</body>
+</html>
