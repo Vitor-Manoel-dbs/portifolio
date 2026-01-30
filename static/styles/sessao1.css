@@ -1,15 +1,52 @@
+@import url(animations.css);
+
 #sessao1 {
     height: 100dvh;
     width: 100dvw;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100dvh;
 }
 
 #imagem {
     flex: 50%;
 }
 
+#sessao1 *{
+    transition: transform 0.5s;
+}
+
+#imagem img{
+    display: block;
+    width: 23dvw;
+    margin-left: auto;
+    margin-right: 10dvw;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #a020f0, 0 0 20px #a020f0, 0 0 40px #7010b0, 0 0 80px #4b0082;
+    animation: balancar 1s ease-in-out infinite alternate;
+}
+
 #sobreMim {
     flex: 50%;
+    font-weight: bold;
+    margin-left: 10dvw;
+}
+
+#sobreMim p{
+    font-weight: 100;
+    max-width: 40dvw;
+    font-size: 30px;
+    color: #e2e8f0;
+}
+
+#sobreMim h2{
+    font-size: 50px;
+    color: #ff007f;
+}
+
+#imagem:hover, #sobreMim h2:hover, #sobreMim p:hover{
+    transform: scale(1.1);
+    cursor: default;
 }

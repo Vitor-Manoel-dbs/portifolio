@@ -7,17 +7,24 @@
     <link rel="stylesheet" href="{{url_for('static', filename='styles/inicio.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='styles/geral.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='styles/sessao1.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/menu.css')}}">
 </head>
 <body>
-    <header>
+    <nav id="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#sessao1">Sobre mim</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#faleComigo">Fale comigo</a>
+    </nav>
+    <header id="inicio">
         <h1>Bem vindo</h1>
         <p>Ao meu portifólio</p>
-        <button onclick="irParaSessao()">Começar</button>
+        <button onclick="irParaSessao('sessao1')">Começar</button>
     </header>
     <section id="sessao1">
         <div id="sobreMim">
-            <h2>Sobre mim</h2>
-            <p>Olá me chamo vitor, tenho 15 anos e sou um desenvolvedor fullstack. Posso criar os seus sites com frontend e backend. Quero aprender cada vez mais e adquirir esperiência, conto com você para isso.</p>
+            <h2><span class="texto-grad">Olá, me chamo</span> Vitor</h2>
+            <p>Tenho 15 anos e sou um desenvolvedor fullstack. Posso criar os seus sites com frontend e backend. Quero aprender cada vez mais e adquirir esperiência, conto com você para isso.</p>
         </div>
         <div id="imagem">
             <img src="{{url_for('static', filename='images/profile.jpeg')}}">

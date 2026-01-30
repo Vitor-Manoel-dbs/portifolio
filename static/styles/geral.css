@@ -1,5 +1,13 @@
 @import url(fonts.css);
 
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: purple radial-gradient(circle at top, #2d1b4e 0%, #020414 100%);
     height: 100dvh;
@@ -8,4 +16,10 @@ body {
     margin: 0;
     font-family: 'roboto', sans-serif;
     background-attachment: fixed;
+}
+
+.texto-grad {
+    background: linear-gradient(90deg, #2e0249 0%, #a020f0 50%, #ff00ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
