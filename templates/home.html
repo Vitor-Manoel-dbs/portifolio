@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{url_for('static', filename='styles/geral.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='styles/sessao1.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='styles/menu.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/projetos.css')}}">
 </head>
 <body>
     <nav id="menu">
@@ -22,12 +23,32 @@
         <button onclick="irParaSessao('sessao1')">Começar</button>
     </header>
     <section id="sessao1">
-        <div id="sobreMim">
-            <h2><span class="texto-grad">Olá, me chamo</span> Vitor</h2>
-            <p>Tenho 15 anos e sou um desenvolvedor fullstack. Posso criar os seus sites com frontend e backend. Quero aprender cada vez mais e adquirir esperiência, conto com você para isso.</p>
+        <div id="sobre">
+            <div id="sobreMim">
+                <h2 id="texto-sobreMim"><span class="texto-grad">Olá, me chamo</span> Vitor</h2>
+                <p>Tenho 15 anos e sou um desenvolvedor fullstack. Posso criar os seus sites com frontend e backend. Quero aprender cada vez mais e adquirir esperiência, conto com você para isso.</p>
+            </div>
+            <div id="imagem">
+                <img src="{{url_for('static', filename='images/profile2.jpg')}}">
+            </div>
         </div>
-        <div id="imagem">
-            <img src="{{url_for('static', filename='images/profile.jpeg')}}">
+        <h2 id="ling-text"><span class="texto-grad">Minhas linguagens</span></h2>
+        <div id="linguagens">
+            <img src="{{url_for('static', filename='images/python.png')}}">
+            <img src="{{url_for('static', filename='images/html.png')}}">
+            <img src="{{url_for('static', filename='images/css.png')}}">
+            <img src="{{url_for('static', filename='images/js.png')}}">
+        </div>
+    </section>
+    <section id="projetos">
+        <h2><span class="texto-grad">Projetos</span></h2>
+        <div id="proj-divs">
+            {% for projeto in projetos %}
+                <div class="projeto">
+                    <img src="{{projeto.image_url}}">
+                    <a target="_blank" href="{{projeto.url}}">{{projeto.nome}}</a>
+                </div>
+            {% endfor %}
         </div>
     </section>
     <script src="{{url_for('static', filename='scripts/scroll.js')}}"></script>

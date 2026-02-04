@@ -1,6 +1,6 @@
 @import url(animations.css);
 
-#sessao1 {
+#sobre {
     height: 100dvh;
     width: 100dvw;
     display: flex;
@@ -14,7 +14,7 @@
     flex: 50%;
 }
 
-#sessao1 *{
+#sobre *, #linguagens img, #sessao1 h2{
     transition: transform 0.5s;
 }
 
@@ -41,12 +41,36 @@
     color: #e2e8f0;
 }
 
-#sobreMim h2{
+#texto-sobreMim{
     font-size: 50px;
     color: #ff007f;
+    text-align: left;
 }
 
-#imagem:hover, #sobreMim h2:hover, #sobreMim p:hover{
+#ling-text{
+    font-size: 50px;
+    text-align: center;
+}
+
+#linguagens {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background: linear-gradient(80deg, rgb(47, 3, 77), #2d1b4e);
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10dvw;
+}
+
+#linguagens img{
+    width: 5dvw;
+}
+
+#imagem:hover, #sobreMim h2:hover, #sobreMim p:hover, #linguagens img:hover, #sessao1 h2:hover{
     transform: scale(1.1);
     cursor: default;
 }

@@ -37,3 +37,14 @@
         opacity: 1;
     }
 }
+
+@keyframes rodar {
+    from {
+        transform: translate(-50%, -50%);
+        rotate: 0deg;
+    }
+    to {
+        transform: translate(-50%, -50%);
+        rotate: 360deg;
+    }
+}

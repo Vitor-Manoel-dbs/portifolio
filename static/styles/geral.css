@@ -19,7 +19,7 @@ body {
 }
 
 .texto-grad {
-    background: linear-gradient(90deg, #2e0249 0%, #a020f0 50%, #ff00ff 100%);
+    background: linear-gradient(90deg, #3e0363 0%, #a020f0 50%, #ff00ff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
