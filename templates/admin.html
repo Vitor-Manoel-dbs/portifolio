@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin</title>
+</head>
+<body>
+    <h1>Admin Page</h1>
+    <form action="" method="post">
+        <input type="text" placeholder="Usuario" name="usuario">
+        <input type="password" placeholder="Senha" name="senha">
+        <input type="text" placeholder="titulo" name="titulo">
+        <input type="text" placeholder="descricao" name="descricao">
+        <input type="text" placeholder="url" name="url">
+        <input type="text" placeholder="image_url" name="image_url">
+        <button type="submit">Login</button>
+    </form>
+    <h2>projetos</h2>
+    <ul>
+        {% for projeto in projetos %}
+            <li>{{projeto.nome}}</li>
+        {% endfor %}
+    </ul>
+
+    <h2><a href="/admin/remove">Remover projetos</a></h2>
+
+</body>
+</html>

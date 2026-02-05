@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>remove</title>
+</head>
+<body>
+    <h1>Remover Projetos</h1>
+    <ul>
+        {% for projeto in projetos %}
+            <li>{{projeto.nome}}</li>
+        {% endfor %}
+    </ul>
+    <form action="" method="post">
+        <input type="text" placeholder="Nome do projeto" name="projeto_nome">
+        <input type="text" placeholder="Admin Name" name="admin_name">
+        <input type="password" placeholder="Admin Password" name="admin_pass">
+        <button type="submit">Remover Projeto</button>
+    </form>
+</body>
+</html>

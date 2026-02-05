@@ -1,0 +1,129 @@
+@media screen and (max-width: 800px){
+    header h1{
+        font-size: 50px;
+    }
+    header button{
+        font-size: 15px;
+    }
+    header {
+        height: auto;
+    }
+    #menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #sobre {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: auto;
+        height: auto;
+        margin-bottom: 100%;
+    }
+
+    #sobreMim {
+        text-align: center;
+        flex: 100%;
+        display: block;
+        margin-left: 0;
+    }
+    #sobreMim p:hover {
+        transform: scale(1);
+    }
+    #sobreMim h2{
+        font-size: 25px;
+    }
+    #sobreMim p {
+        font-size: 15px;
+        max-width: 100%;
+        margin: 5%;
+    }
+    #texto-sobreMim{
+        text-align: center;
+    }
+    #texto-sobreMim h2:hover {
+        transform: scale(1);
+    }
+
+    #sessao1 h2{
+        font-size: 25px;
+    }
+
+    #sessao1 h2:hover {
+        transform: scale(1);
+    }
+    #imagem img{
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 20%;
+        width: 50%;
+    }
+    #imagem:hover {
+        transform: scale(1);
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    #linguagens h2 {
+        font-size: 25px;
+    }
+
+    #linguagens{
+        width: 95%;
+        margin-bottom: 0;
+    }
+
+    #linguagens img{
+        width: 18%;
+    }
+
+    #linguagens img:hover {
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 800px){
+    #projetos {
+        margin-top: 50%;
+    }
+    #projetos h2{
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+
+    #proj-divs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #proj-divs div img{
+        width: 100%;
+        height: auto;
+    }
+
+    #proj-divs div{
+        width: 75%;
+        margin: 5px;
+        margin-bottom: 15px;
+        height: 50%;
+
+    }
+
+    #contato-div{
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+        margin-bottom: 0;
+        margin-bottom: 0 auto;
+        
+    }
+    #contato-div a{
+        display: inline-block;
+        margin-bottom: 0;
+    }
+    footer {
+        margin-top: auto;
+}
